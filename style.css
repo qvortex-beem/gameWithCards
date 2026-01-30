@@ -33,6 +33,9 @@ body {
    text-decoration: none;
    transition: all 0.3s;
 }
+.cell:hover {
+   transform: translateY(-3px);
+}
 .active {
    transform: translateY(-5px);
    box-shadow: 0 5px 5px black;
@@ -41,7 +44,7 @@ body {
    /* backface-visibility: hidden; */
    animation:
       pulse 0.5s,
-      spin 0.5s forwards;
+      spin 0.5s;
    transition: all 0.3s;
 }
 .active span {
@@ -76,9 +79,9 @@ body {
 @keyframes wave {
    0%,
    100% {
-      transform: translateY(3px);
+      transform: translateY(0px);
    }
    50% {
-      transform: translateY(0px);
+      transform: translateY(-4px);
    }
 }
